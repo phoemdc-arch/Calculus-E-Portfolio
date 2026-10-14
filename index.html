@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2CALC-IT e-Portfolio | Dela Cruz, Phoemela T.</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col selection:bg-purple-500 selection:text-white">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-purple-900/40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-600 to-indigo-500 flex items-center justify-center shadow-lg shadow-purple-500/30">
+                    <i class="fa-solid fa-square-root-variable text-white text-lg"></i>
+                </div>
+                <div>
+                    <span class="font-bold tracking-wide text-lg bg-gradient-to-r from-purple-400 to-indigo-300 bg-clip-text text-transparent">2CALC-IT e-Portfolio</span>
+                    <span class="block text-xs text-slate-400">Calculus for Information Technology</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-1">
+                <a href="#home" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-purple-950/50 transition">Home</a>
+                <a href="#artifacts" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-purple-950/50 transition">Artifacts</a>
+                <a href="#reflections" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-purple-950/50 transition">Reflections</a>
+                <a href="#resume" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-purple-950/50 transition">Resume & Honors</a>
+            </nav>
+
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-1 bg-slate-900 border-b border-purple-900/40">
+            <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-purple-950">Home</a>
+            <a href="#artifacts" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-purple-950">Artifacts</a>
+            <a href="#reflections" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-purple-950">Reflections</a>
+            <a href="#resume" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-purple-950">Resume & Honors</a>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="flex-grow">
+
+        <!-- Hero / Home Section -->
+        <section id="home" class="relative overflow-hidden py-16 lg:py-24 border-b border-purple-950/50 bg-gradient-to-b from-purple-950/20 via-slate-950 to-slate-950">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(126,34,206,0.15),transparent_50%)]"></div>
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-purple-950/80 border border-purple-700/50 text-purple-300 text-xs font-medium">
+                            <span class="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></span>
+                            <span>1st Semester • AY 2024-2025 • Holy Angel University • CYB-202</span>
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                            Hi, I'm <span class="bg-gradient-to-r from-purple-400 via-fuchsia-300 to-indigo-400 bg-clip-text text-transparent">Phoemela T. Dela Cruz</span>
+                        </h1>
+                        <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+                            Welcome to my electronic portfolio for <strong class="text-purple-300 font-semibold">2CALC-IT (Calculus for Information Technology)</strong>. As a Cybersecurity student, this portfolio showcases my assigned course outputs, handwritten problem-solving drills, quizzes, prelim examinations, group projects, and structured reflections.
+                        </p>
+                        <div class="flex flex-wrap gap-4 pt-2">
+                            <a href="#artifacts" class="px-6 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-medium shadow-lg shadow-purple-600/30 hover:opacity-90 transition flex items-center space-x-2">
+                                <span>Explore Artifacts</span>
+                                <i class="fa-solid fa-arrow-down text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-5">
+                        <div class="p-6 sm:p-8 rounded-2xl bg-gradient-to-b from-purple-950/40 to-slate-900/80 border border-purple-900/60 shadow-2xl relative">
+                            <div class="absolute -top-3 -right-3 bg-purple-600 text-white text-xs px-3 py-1 rounded-full font-bold shadow">CYB-202</div>
+                            <h3 class="text-xl font-bold text-white mb-4 flex items-center space-x-2">
+                                <i class="fa-solid fa-user-graduate text-purple-400"></i>
+                                <span>Student Profile</span>
+                            </h3>
+                            <ul class="space-y-3 text-sm text-slate-300">
+                                <li class="flex justify-between border-b border-purple-950 pb-2">
+                                    <span class="text-slate-400">Name:</span>
+                                    <span class="font-medium text-white">Phoemela T. Dela Cruz</span>
+                                </li>
+                                <li class="flex justify-between border-b border-purple-950 pb-2">
+                                    <span class="text-slate-400">Program / Section:</span>
+                                    <span class="font-medium text-white">BS Cybersecurity (CYB-202)</span>
+                                </li>
+                                <li class="flex justify-between border-b border-purple-950 pb-2">
+                                    <span class="text-slate-400">Institution:</span>
+                                    <span class="font-medium text-white">Holy Angel University</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span class="text-slate-400">Role:</span>
+                                    <span class="font-medium text-purple-300">GDG on Campus HAU Officer</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artifacts Section -->
+        <section id="artifacts" class="py-16 bg-slate-950">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Course Artifacts Showcase</h2>
+                    <p class="mt-3 text-slate-400 text-sm sm:text-base">Featuring all assigned 2CALC-IT activities, handwritten problem sets, quizzes, exams, and projects.</p>
+                </div>
+
+                <!-- Grid of Artifact Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="artifacts-grid">
+                    
+                    <!-- 1. Activity: Evaluation of Functions -->
+                    <div class="artifact-card rounded-2xl bg-slate-900/90 border border-purple-900/40 overflow-hidden shadow-xl hover:border-purple-600/60 transition group flex flex-col justify-between">
+                        <div>
+                            <div class="h-48 bg-slate-950 relative overflow-hidden">
+                                <span class="absolute top-3 right-3 z-10 bg-purple-900/90 text-purple-200 text-xs px-2.5 py-1 rounded-full border border-purple-700/50 backdrop-blur-sm">2 Pages</span>
+                                <img src="11.png" alt="Activity: Evaluation of Functions" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition">Activity: Evaluation of Functions</h3>
+                            <p class="text-sm text-slate-300">Comprehensive multi-page activity covering function operations, algebraic combinations, and composite functions.</p>
+                            <div class="flex items-center justify-between pt-2 border-t border-purple-950">
+                                <span class="text-xs text-purple-400 font-medium"><i class="fa-solid fa-square-root-variable mr-1"></i> Function Activity</span>
+                                <button onclick="openModalMulti('Activity: Evaluation of Functions', 'Working through the Evaluation of Functions activity allowed me to build a strong operational foundation in manipulating function expressions through addition, subtraction, multiplication, division, and composition (f o g)(x). As a Cybersecurity student, understanding how input values transform through stacked mathematical operations closely mirrors data pipeline processing and function evaluation in programming. Completing these two pages reinforced the importance of systematic step-by-step simplification, ensuring accuracy before applying functions to more complex models.', ['11.png', '11.1.png'])" class="text-xs text-purple-300 hover:text-white font-semibold flex items-center space-x-1 bg-purple-950/60 px-3 py-1.5 rounded-lg border border-purple-800/50">
+                                    <span>View Reflection</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Infographic: Functions and Limits in the Real World -->
+                    <div class="artifact-card rounded-2xl bg-slate-900/90 border border-purple-900/40 overflow-hidden shadow-xl hover:border-purple-600/60 transition group flex flex-col justify-between">
+                        <div>
+                            <div class="h-48 bg-slate-950 relative overflow-hidden">
+                                <span class="absolute top-3 right-3 z-10 bg-fuchsia-900/90 text-fuchsia-200 text-xs px-2.5 py-1 rounded-full border border-fuchsia-700/50 backdrop-blur-sm">Project</span>
+                                <img src="infographic.png" alt="Infographic Project" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition">Infographic: Functions and Limits in the Real World</h3>
+                            <p class="text-sm text-slate-300">Group infographic illustrating calculus applications across medicine, economics, computer science, and engineering.</p>
+                            <div class="flex items-center justify-between pt-2 border-t border-purple-950">
+                                <span class="text-xs text-purple-400 font-medium"><i class="fa-solid fa-star mr-1"></i> Group Project</span>
+                                <button onclick="openModal('Infographic: Functions and Limits in the Real World', 'Collaborating with my team to research and design this real-world infographic bridged the gap between abstract calculus theory and practical technology. Investigating how limits model computer science algorithm efficiency (Big O notation), packet throughput, and physical system dynamics highlighted the ubiquitous nature of calculus in engineering. Designing the visual layout honed my ability to translate complex mathematical concepts into clean, accessible visual documentation for technical and non-technical audiences alike.', 'infographic.png')" class="text-xs text-purple-300 hover:text-white font-semibold flex items-center space-x-1 bg-purple-950/60 px-3 py-1.5 rounded-lg border border-purple-800/50">
+                                    <span>View Reflection</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Quiz: Limits & Evaluation -->
+                    <div class="artifact-card rounded-2xl bg-slate-900/90 border border-purple-900/40 overflow-hidden shadow-xl hover:border-purple-600/60 transition group flex flex-col justify-between">
+                        <div>
+                            <div class="h-48 bg-slate-950 relative overflow-hidden">
+                                <span class="absolute top-3 right-3 z-10 bg-indigo-900/90 text-indigo-200 text-xs px-2.5 py-1 rounded-full border border-indigo-700/50 backdrop-blur-sm">Score: 18/45</span>
+                                <img src="1.jpg" alt="Quiz 18/45" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition">Quiz (Limits & Evaluation)</h3>
+                            <p class="text-sm text-slate-300">Handwritten quiz assessment evaluating limits of algebraic functions and asymptotic behavior.</p>
+                            <div class="flex items-center justify-between pt-2 border-t border-purple-950">
+                                <span class="text-xs text-purple-400 font-medium"><i class="fa-solid fa-chart-line mr-1"></i> Assessment</span>
+                                <button onclick="openModal('Quiz (Limits & Evaluation)', 'This quiz on algebraic limits and limit evaluations presented a challenging assessment that tested my precision under time constraints. Evaluating functions near asymptotes and determining limiting behaviors highlighted specific areas where my algebraic simplification needed refinement. Reflecting on this score motivated me to systematically review limit laws and algebraic factoring, transforming an early assessment obstacle into a focused drive for mastery.', '1.jpg')" class="text-xs text-purple-300 hover:text-white font-semibold flex items-center space-x-1 bg-purple-950/60 px-3 py-1.5 rounded-lg border border-purple-800/50">
+                                    <span>View Reflection</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Student Engagement: Introduction to Derivatives -->
+                    <div class="artifact-card rounded-2xl bg-slate-900/90 border border-purple-900/40 overflow-hidden shadow-xl hover:border-purple-600/60 transition group flex flex-col justify-between">
+                        <div>
+                            <div class="h-48 bg-slate-950 relative overflow-hidden">
+                                <span class="absolute top-3 right-3 z-10 bg-purple-900/90 text-purple-200 text-xs px-2.5 py-1 rounded-full border border-purple-700/50 backdrop-blur-sm">Engagement</span>
+                                <img src="2.jpg" alt="Student Engagement: Introduction to Derivatives" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition">Student Engagement: Introduction to Derivatives</h3>
+                            <p class="text-sm text-slate-300">Handwritten problem set finding derivatives of power functions, polynomials, and basic terms.</p>
+                            <div class="flex items-center justify-between pt-2 border-t border-purple-950">
+                                <span class="text-xs text-purple-400 font-medium"><i class="fa-solid fa-list-check mr-1"></i> Problem Set</span>
+                                <button onclick="openModal('Student Engagement: Introduction to Derivatives', 'This problem set served as my gateway into differential calculus, shifting my perspective from static algebraic functions to dynamic rates of change. By computing derivatives of basic terms and polynomials using the power rule, I gained a clear understanding of instantaneous slopes and velocity. This concept is essential in IT and Cybersecurity when analyzing real-time network traffic spikes, bandwidth fluctuations, and system resource consumption over time.', '2.jpg')" class="text-xs text-purple-300 hover:text-white font-semibold flex items-center space-x-1 bg-purple-950/60 px-3 py-1.5 rounded-lg border border-purple-800/50">
+                                    <span>View Reflection</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. Student Engagement: Basic Differentiation Formulas Part 1 -->
+                    <div class="artifact-card rounded-2xl bg-slate-900/90 border border-purple-900/40 overflow-hidden shadow-xl hover:border-purple-600/60 transition group flex flex-col justify-between">
+                        <div>
+                            <div class="h-48 bg-slate-950 relative overflow-hidden">
+                                <span class="absolute top-3 right-3 z-10 bg-purple-900/90 text-purple-200 text-xs px-2.5 py-1 rounded-full border border-purple-700/50 backdrop-blur-sm">Part 1</span>
+                                <img src="3.jpg" alt="Student Engagement: Basic Differentiation Formulas Part 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition">Student Engagement: Basic Differentiation Formulas Part 1</h3>
+                            <p class="text-sm text-slate-300">Mastering fractional exponents, negative powers, and sum/difference derivative rules.</p>
+                            <div class="flex items-center justify-between pt-2 border-t border-purple-950">
+                                <span class="text-xs text-purple-400 font-medium"><i class="fa-solid fa-calculator mr-1"></i> Drill Work</span>
+                                <button onclick="openModal('Student Engagement: Basic Differentiation Formulas Part 1', 'Practicing basic differentiation formulas across fractional and negative exponents strengthened my algebraic fluency and attention to structural detail. Handling expressions with roots and denominators required careful rewritten steps before applying derivative shortcuts. Mastering these fundamental rules built the speed and confidence necessary to approach multi-term polynomial derivatives without computational hesitation.', '3.jpg')" class="text-xs text-purple-300 hover:text-white font-semibold flex items-center space-x-1 bg-purple-950/60 px-3 py-1.5 rounded-lg border border-purple-800/50">
+                                    <span>View Reflection</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. Activity - Implicit, Exp, Trigo -->
+                    <div class="artifact-card rounded-2xl bg-slate-900/90 border border-purple-900/40 overflow-hidden shadow-xl hover:border-purple-600/60 transition group flex flex-col justify-between">
+                        <div>
+                            <div class="h-48 bg-slate-950 relative overflow-hidden">
+                                <span class="absolute top-3 right-3 z-10 bg-purple-900/90 text-purple-200 text-xs px-2.5 py-1 rounded-full border border-purple-700/50 backdrop-blur-sm">Activity</span>
+                                <img src="4.jpg" alt="Activity - Implicit, Exp, Trigo" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition">ACTIVITY - Implicit, Exp, Trigo</h3>
+                            <p class="text-sm text-slate-300">Detailed solutions for logarithmic, exponential, trigonometric derivatives, and implicit differentiation.</p>
+                            <div class="flex items-center justify-between pt-2 border-t border-purple-950">
+                                <span class="text-xs text-purple-400 font-medium"><i class="fa-solid fa-square-root-variable mr-1"></i> Advanced Derivatives</span>
+                                <button onclick="openModal('ACTIVITY - Implicit, Exp, Trigo', 'This activity expanded my calculus toolkit beyond simple algebraic terms into transcendental functions involving logarithms, exponentials, trigonometric expressions, and implicit curves. Working through implicit differentiation required analyzing equations where variables cannot be isolated easily, mirroring complex system dependencies in software development. Mastering these advanced derivative formulas deepened my analytical problem-solving versatility.', '4.jpg')" class="text-xs text-purple-300 hover:text-white font-semibold flex items-center space-x-1 bg-purple-950/60 px-3 py-1.5 rounded-lg border border-purple-800/50">
+                                    <span>View Reflection</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. Quiz (Score: 25) -->
+                    <div class="artifact-card rounded-2xl bg-slate-900/90 border border-purple-900/40 overflow-hidden shadow-xl hover:border-purple-600/60 transition group flex flex-col justify-between">
+                        <div>
+                            <div class="h-48 bg-slate-950 relative overflow-hidden">
+                                <span class="absolute top-3 right-3 z-10 bg-indigo-900/90 text-indigo-200 text-xs px-2.5 py-1 rounded-full border border-indigo-700/50 backdrop-blur-sm">Score: 25</span>
+                                <img src="5.jpg" alt="Quiz Score 25" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition">QUIZ (Differentiation & Rules)</h3>
+                            <p class="text-sm text-slate-300">Timed quiz covering product rule, quotient rule, power rule, and chain rule applications (Dated: 08-03-2026).</p>
+                            <div class="flex items-center justify-between pt-2 border-t border-purple-950">
+                                <span class="text-xs text-purple-400 font-medium"><i class="fa-regular fa-calendar mr-1"></i> 08-03-2026</span>
+                                <button onclick="openModal('QUIZ (Score: 25)', 'Achieving a score of 25 on this timed differentiation quiz validated my growing mastery across the product rule, quotient rule, power rule, and chain rule. Applying multiple derivative laws in sequence required structured organization and mental discipline to prevent sign errors or missed terms. This result boosted my confidence in executing multi-step mathematical workflows accurately under exam conditions.', '5.jpg')" class="text-xs text-purple-300 hover:text-white font-semibold flex items-center space-x-1 bg-purple-950/60 px-3 py-1.5 rounded-lg border border-purple-800/50">
+                                    <span>View Reflection</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. Student Engagement: The Chain Rule -->
+                    <div class="artifact-card rounded-2xl bg-slate-900/90 border border-purple-900/40 overflow-hidden shadow-xl hover:border-purple-600/60 transition group flex flex-col justify-between">
+                        <div>
+                            <div class="h-48 bg-slate-950 relative overflow-hidden">
+                                <span class="absolute top-3 right-3 z-10 bg-purple-900/90 text-purple-200 text-xs px-2.5 py-1 rounded-full border border-purple-700/50 backdrop-blur-sm">Engagement</span>
+                                <img src="6.jpg" alt="Student Engagement: The Chain Rule" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition">Student Engagement: The Chain Rule</h3>
+                            <p class="text-sm text-slate-300">Step-by-step solutions for differentiating composite functions and nested algebraic expressions.</p>
+                            <div class="flex items-center justify-between pt-2 border-t border-purple-950">
+                                <span class="text-xs text-purple-400 font-medium"><i class="fa-solid fa-list-check mr-1"></i> Chain Rule</span>
+                                <button onclick="openModal('Student Engagement: The Chain Rule', 'Navigating through the Chain Rule problem set provided a clear mental model for differentiating composite, nested functions f(g(x)). Breaking down outer and inner layers systematically taught me how changes in a foundational component cascade through an entire system—a principle directly applicable to analyzing layered network protocols and security access layers in Cybersecurity.', '6.jpg')" class="text-xs text-purple-300 hover:text-white font-semibold flex items-center space-x-1 bg-purple-950/60 px-3 py-1.5 rounded-lg border border-purple-800/50">
+                                    <span>View Reflection</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 9. Preliminary Examination Answer Sheet -->
+                    <div class="artifact-card rounded-2xl bg-slate-900/90 border border-purple-900/40 overflow-hidden shadow-xl hover:border-purple-600/60 transition group flex flex-col justify-between">
+                        <div>
+                            <div class="h-48 bg-slate-950 relative overflow-hidden">
+                                <span class="absolute top-3 right-3 z-10 bg-indigo-900/90 text-indigo-200 text-xs px-2.5 py-1 rounded-full border border-indigo-700/50 backdrop-blur-sm">Score: 27</span>
+                                <img src="7.jpg" alt="Preliminary Exam Answer Sheet" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition">Preliminary Examination Answer Sheet</h3>
+                            <p class="text-sm text-slate-300">Holy Angel University Department of Mathematics and Science official answer sheet (Dated: 07/14/2026).</p>
+                            <div class="flex items-center justify-between pt-2 border-t border-purple-950">
+                                <span class="text-xs text-purple-400 font-medium"><i class="fa-regular fa-calendar mr-1"></i> 07/14/2026</span>
+                                <button onclick="openModal('Preliminary Examination Answer Sheet', 'Taking the 2CALC-IT Preliminary Examination under Prof. Mr. Gil V. Tiongco served as a comprehensive check on my cumulative understanding of functions, limits, and early derivative concepts. Reviewing my performance on this official evaluation provided valuable insight into my test-taking strategy, identifying strong conceptual areas while pin-pointing topics requiring deeper practice for the remainder of the semester.', '7.jpg')" class="text-xs text-purple-300 hover:text-white font-semibold flex items-center space-x-1 bg-purple-950/60 px-3 py-1.5 rounded-lg border border-purple-800/50">
+                                    <span>View Reflection</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 10. Practice: Integration Work -->
+                    <div class="artifact-card rounded-2xl bg-slate-900/90 border border-purple-900/40 overflow-hidden shadow-xl hover:border-purple-600/60 transition group flex flex-col justify-between">
+                        <div>
+                            <div class="h-48 bg-slate-950 relative overflow-hidden">
+                                <span class="absolute top-3 right-3 z-10 bg-purple-900/90 text-purple-200 text-xs px-2.5 py-1 rounded-full border border-purple-700/50 backdrop-blur-sm">Practice</span>
+                                <img src="8.jpg" alt="Practice Integration by Parts" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition">Practice: Integration Work</h3>
+                            <p class="text-sm text-slate-300">Detailed handwritten derivations for integral problems involving trigonometric and exponential functions.</p>
+                            <div class="flex items-center justify-between pt-2 border-t border-purple-950">
+                                <span class="text-xs text-purple-400 font-medium"><i class="fa-solid fa-pen-ruler mr-1"></i> Problem Drills</span>
+                                <button onclick="openModal('Practice: Integration Work', 'Working through these handwritten practice drills on integration introduced me to the inverse operation of differentiation. Solving integral expressions involving trigonometric and exponential functions using substitution methods reinforced the necessity of working backward systematically. This reverse-engineering process closely aligns with vulnerability analysis and code debugging in cybersecurity.', '8.jpg')" class="text-xs text-purple-300 hover:text-white font-semibold flex items-center space-x-1 bg-purple-950/60 px-3 py-1.5 rounded-lg border border-purple-800/50">
+                                    <span>View Reflection</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 11. Drill: Integration Techniques -->
+                    <div class="artifact-card rounded-2xl bg-slate-900/90 border border-purple-900/40 overflow-hidden shadow-xl hover:border-purple-600/60 transition group flex flex-col justify-between">
+                        <div>
+                            <div class="h-48 bg-slate-950 relative overflow-hidden">
+                                <span class="absolute top-3 right-3 z-10 bg-indigo-900/90 text-indigo-200 text-xs px-2.5 py-1 rounded-full border border-indigo-700/50 backdrop-blur-sm">Score: 20</span>
+                                <img src="9.jpg" alt="Drill Integration" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition">Drill: Integration Techniques</h3>
+                            <p class="text-sm text-slate-300">Comprehensive drill sheet on polynomial and exponential integration formulas (Dated: 09/14/2026).</p>
+                            <div class="flex items-center justify-between pt-2 border-t border-purple-950">
+                                <span class="text-xs text-purple-400 font-medium"><i class="fa-regular fa-calendar mr-1"></i> 09/14/2026</span>
+                                <button onclick="openModal('Drill: Integration Techniques', 'Earning a score of 20 on this integration drill demonstrated solid proficiency in evaluating polynomial, logarithmic, and exponential integrals. Successfully identifying appropriate substitution terms (u-substitution) and antiderivative formulas reflected strong pattern recognition skills, proving that consistent practice translates directly into computational accuracy.', '9.jpg')" class="text-xs text-purple-300 hover:text-white font-semibold flex items-center space-x-1 bg-purple-950/60 px-3 py-1.5 rounded-lg border border-purple-800/50">
+                                    <span>View Reflection</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 12. Trigonometric Functions — Activity #2 -->
+                    <div class="artifact-card rounded-2xl bg-slate-900/90 border border-purple-900/40 overflow-hidden shadow-xl hover:border-purple-600/60 transition group flex flex-col justify-between">
+                        <div>
+                            <div class="h-48 bg-slate-950 relative overflow-hidden">
+                                <span class="absolute top-3 right-3 z-10 bg-indigo-900/90 text-indigo-200 text-xs px-2.5 py-1 rounded-full border border-indigo-700/50 backdrop-blur-sm">Score: 14/14</span>
+                                <img src="10.jpg" alt="Trigonometric Functions Activity #2" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition">Trigonometric Functions — Activity #2</h3>
+                            <p class="text-sm text-slate-300">Perfect score activity (14/14) covering trigonometric integrals and substitution (Dated: 09/21/2026).</p>
+                            <div class="flex items-center justify-between pt-2 border-t border-purple-950">
+                                <span class="text-xs text-purple-400 font-medium"><i class="fa-regular fa-calendar mr-1"></i> 09/21/2026</span>
+                                <button onclick="openModal('Trigonometric Functions — Activity #2 (14/14)', 'Achieving a perfect score of 14/14 on this trigonometric integration activity represented a major milestone in my calculus journey. Solving antiderivatives of trigonometric functions required precise trigonometric identities and substitution rules. This flawless execution demonstrated complete conceptual clarity and attention to detail, reinforcing my belief that persistence leads to mathematical excellence.', '10.jpg')" class="text-xs text-purple-300 hover:text-white font-semibold flex items-center space-x-1 bg-purple-950/60 px-3 py-1.5 rounded-lg border border-purple-800/50">
+                                    <span>View Reflection</span>
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Reflections Section -->
+        <section id="reflections" class="py-16 bg-slate-900/50 border-t border-b border-purple-950/50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Learning Journey & Reflections</h2>
+                    <p class="mt-3 text-slate-400">Thoughtful insights on how calculus transforms technical problem-solving in Cybersecurity and IT.</p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="p-6 sm:p-8 rounded-2xl bg-slate-900 border border-purple-900/50 shadow-xl">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-600/20 border border-purple-500/40 flex items-center justify-center text-purple-400 font-bold text-lg">01</div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white">The Bridge Between Calculus and Cybersecurity</h3>
+                                <span class="text-xs text-purple-400">Core Course Synthesis</span>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            Throughout 2CALC-IT, I discovered that mathematical concepts like limits, derivatives, and integrals are far from abstract theory—they are foundational to IT and Cybersecurity. Limits model asymptotic throughputs and network bottleneck capacities; derivatives measure instantaneous rates of traffic change and anomaly detection bursts; integrals quantify cumulative bandwidth consumption and storage accumulation.
+                        </p>
+                    </div>
+
+                    <div class="p-6 sm:p-8 rounded-2xl bg-slate-900 border border-purple-900/50 shadow-xl">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-600/20 border border-purple-500/40 flex items-center justify-center text-purple-400 font-bold text-lg">02</div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Perseverance and Analytical Growth</h3>
+                                <span class="text-xs text-purple-400">Overcoming Challenges</span>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            Working through practice sets, drills, quizzes, exams, and group projects taught me the value of step-by-step problem-solving and perseverance. Every challenge—from low quiz scores to complex chain rule calculations—served as a stepping stone toward analytical confidence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume & Honors Section -->
+        <section id="resume" class="py-16 bg-slate-950">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Resume, Honors & Certifications</h2>
+                    <p class="mt-3 text-slate-400 text-sm sm:text-base">Professional background, leadership roles, and academic achievements.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Resume Overview -->
+                    <div class="p-6 sm:p-8 rounded-2xl bg-slate-900 border border-purple-900/50 shadow-xl space-y-6">
+                        <h3 class="text-xl font-bold text-white flex items-center space-x-2">
+                            <i class="fa-solid fa-address-card text-purple-400"></i>
+                            <span>Professional Summary</span>
+                        </h3>
+                        <div class="space-y-4 text-sm text-slate-300">
+                            <div>
+                                <h4 class="font-bold text-white text-base">Phoemela T. Dela Cruz</h4>
+                                <p class="text-purple-300 text-xs">BS Cybersecurity Student • Holy Angel University • Section CYB-202</p>
+                            </div>
+                            <p>Student leader and Community Relations Officer for Google Developer Groups on Campus HAU. Passionate about software development, secure web design, and creative craftsmanship.</p>
+                            <div class="pt-2">
+                                <h5 class="font-semibold text-white mb-2">Technical Skills:</h5>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-2.5 py-1 rounded-md bg-purple-950 text-purple-200 border border-purple-800/60 text-xs">Python</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-purple-950 text-purple-200 border border-purple-800/60 text-xs">Java</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-purple-950 text-purple-200 border border-purple-800/60 text-xs">HTML/CSS/JS</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-purple-950 text-purple-200 border border-purple-800/60 text-xs">VS Code</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-purple-950 text-purple-200 border border-purple-800/60 text-xs">Figma</span>
+                                    <span class="px-2.5 py-1 rounded-md bg-purple-950 text-purple-200 border border-purple-800/60 text-xs">Git & GitHub</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Honors & Certifications -->
+                    <div class="p-6 sm:p-8 rounded-2xl bg-slate-900 border border-purple-900/50 shadow-xl space-y-6">
+                        <h3 class="text-xl font-bold text-white flex items-center space-x-2">
+                            <i class="fa-solid fa-award text-purple-400"></i>
+                            <span>Honors & Certifications</span>
+                        </h3>
+                        <div class="space-y-4 text-sm text-slate-300">
+                            <div class="flex items-start space-x-3 p-3 rounded-xl bg-purple-950/40 border border-purple-900/50">
+                                <i class="fa-solid fa-medal text-purple-400 text-lg mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-white">Community Relations Officer</h4>
+                                    <p class="text-xs text-purple-300">Google Developer Groups on Campus HAU</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3 p-3 rounded-xl bg-purple-950/40 border border-purple-900/50">
+                                <i class="fa-solid fa-certificate text-purple-400 text-lg mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-white">NSTP Community Immersion Leader</h4>
+                                    <p class="text-xs text-purple-300">Project "Thomas and Friends" Leadership & Accomplishment</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3 p-3 rounded-xl bg-purple-950/40 border border-purple-900/50">
+                                <i class="fa-solid fa-star text-purple-400 text-lg mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-white">Dean's List Honoree</h4>
+                                    <p class="text-xs text-purple-300">Holy Angel University - School of Computing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-purple-950/80 py-8 text-center text-xs text-slate-500">
+        <p>© Phoemela T. Dela Cruz • 2CALC-IT e-Portfolio • Holy Angel University</p>
+    </footer>
+
+    <!-- Interactive Modal with Full Image Preview -->
+    <div id="reflection-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/85 backdrop-blur-md p-4 overflow-y-auto">
+        <div class="bg-slate-900 border border-purple-700/60 max-w-2xl w-full rounded-2xl p-6 sm:p-8 shadow-2xl relative space-y-6 my-auto max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white bg-slate-800 w-8 h-8 rounded-full flex items-center justify-center">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-lg bg-purple-600/30 border border-purple-500/40 flex items-center justify-center text-purple-300">
+                    <i class="fa-solid fa-magnifying-glass text-base"></i>
+                </div>
+                <div>
+                    <h3 id="modal-title" class="text-lg font-bold text-white">Artifact Title</h3>
+                    <span class="text-xs text-purple-400">Detailed Reflection & Full Activity Preview</span>
+                </div>
+            </div>
+            
+            <!-- Reflection Text -->
+            <p id="modal-description" class="text-sm text-slate-300 leading-relaxed bg-slate-950/50 p-4 rounded-xl border border-purple-950">
+                Artifact description and reflection text goes here.
+            </p>
+
+            <!-- Image Container -->
+            <div id="modal-image-container" class="hidden space-y-4">
+                <span class="text-xs font-semibold text-purple-300 uppercase tracking-wider block"><i class="fa-solid fa-image mr-1"></i> Full Document Preview:</span>
+                <div id="modal-images-wrapper" class="space-y-4 rounded-xl overflow-hidden border border-purple-900/60 bg-slate-950 p-2 flex flex-col items-center">
+                    <!-- Dynamic images injected here -->
+                </div>
+            </div>
+
+            <div class="pt-4 border-t border-purple-950 flex justify-end">
+                <button onclick="closeModal()" class="px-5 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white text-xs font-semibold transition">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript for Modal -->
+    <script>
+        function openModal(title, description, imageSrc) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-description').innerText = description;
+            
+            const imgContainer = document.getElementById('modal-image-container');
+            const wrapper = document.getElementById('modal-images-wrapper');
+            wrapper.innerHTML = '';
+            
+            if (imageSrc) {
+                const img = document.createElement('img');
+                img.src = imageSrc;
+                img.className = 'max-h-[500px] w-auto object-contain rounded-lg';
+                wrapper.appendChild(img);
+                imgContainer.classList.remove('hidden');
+            } else {
+                imgContainer.classList.add('hidden');
+            }
+            
+            document.getElementById('reflection-modal').classList.remove('hidden');
+            document.getElementById('reflection-modal').classList.add('flex');
+        }
+
+        function openModalMulti(title, description, imageSrcs) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-description').innerText = description;
+            
+            const imgContainer = document.getElementById('modal-image-container');
+            const wrapper = document.getElementById('modal-images-wrapper');
+            wrapper.innerHTML = '';
+            
+            if (imageSrcs && imageSrcs.length > 0) {
+                imageSrcs.forEach((src, idx) => {
+                    const pageLabel = document.createElement('span');
+                    pageLabel.className = 'text-[10px] text-purple-400 font-mono uppercase';
+                    pageLabel.innerText = `Page ${idx + 1}`;
+                    wrapper.appendChild(pageLabel);
+
+                    const img = document.createElement('img');
+                    img.src = src;
+                    img.className = 'max-h-[500px] w-auto object-contain rounded-lg mb-2';
+                wrapper.appendChild(img);
+                });
+                imgContainer.classList.remove('hidden');
+            } else {
+                imgContainer.classList.add('hidden');
+            }
+            
+            document.getElementById('reflection-modal').classList.remove('hidden');
+            document.getElementById('reflection-modal').classList.add('flex');
+        }
+
+        function closeModal() {
+            document.getElementById('reflection-modal').classList.add('hidden');
+            document.getElementById('reflection-modal').classList.remove('flex');
+        }
+
+        // Close modal on outside click
+        window.onclick = function(event) {
+            const modal = document.getElementById('reflection-modal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
